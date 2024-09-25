@@ -5,7 +5,7 @@ const homelist = (req, res) => {
           title: 'Loc8r',
           strapline: 'Find places to work with wifi near you!'
       },
-      sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
+      sidebar: "Epic Expeditions offer curated travel packages for all types of travelers, from adventure seekers to leisure explorers. Users can easily browse, compare, and book trips tailored to their preferences and budgets.",
       locations: [
           {
               name: 'GOA',
