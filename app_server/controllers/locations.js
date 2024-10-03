@@ -13,7 +13,8 @@ const homelist = (req, res) => {
               rating: 3,
               price: 12000,
               facilities: ['Stay', 'Food', 'Transport'],
-              distance: '5D Trip'
+              distance: '5D Trip',
+              link:"/location"
           },
           {
               name: 'Manali',
@@ -21,7 +22,8 @@ const homelist = (req, res) => {
               rating: 4,
               price: 24000,
               facilities: ['Premium Hotel Stay', 'Food', 'Travel Guide'],
-              distance: '2W Trip'
+              distance: '2W Trip',
+              link:"/Manali"
           },
           {
               name: 'Ooty',
@@ -29,7 +31,8 @@ const homelist = (req, res) => {
               rating: 2,
               price: 8000,
               facilities: ['Food', 'Stay'],
-              distance: '3D Trip'
+              distance: '3D Trip',
+              link:"/ooty"
           }
       ]
   });
@@ -39,6 +42,12 @@ const homelist = (req, res) => {
 const locationInfo = (req, res) => {
     res.render('location-info', { title: 'Location info' });
    };
+   const Manali = (req, res) => {
+    res.render('Manali', { title: 'Manali' });
+   };
+   const ooty = (req, res) => {
+    res.render('ooty', { title: 'ooty' });
+   };
    /* GET 'Add review' page */
    const addReview = (req, res) => {
     res.render('location-review-form', { title: 'Add review' });
@@ -47,5 +56,7 @@ const locationInfo = (req, res) => {
 module.exports = {
   homelist,
   locationInfo,
-  addReview
+  addReview,
+  Manali,
+  ooty
 };
