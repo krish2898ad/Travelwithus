@@ -25,6 +25,18 @@ block content
           p.card-text Friday : 8:00pm
           p.card-text Tuesday : 6:00am
 
+      // New card section for images placed directly below the Availability card
+      .card.card-primary.image-card
+        .card-block
+          h2.card-title Image Gallery
+          .row
+            .col-4
+              img(src='/images/goa1.jpg', alt='Goa Image 1', class='img-fluid')
+            .col-4
+              img(src='/images/goa2.jpg', alt='Goa Image 2', class='img-fluid')
+            .col-4
+              img(src='/images/goa3.jpg', alt='Goa Image 3', class='img-fluid')
+
       .card.card-primary
         .card-block
           h2.card-title Facilities
@@ -40,37 +52,36 @@ block content
             i.fa.fa-check
             | &nbsp;Transport
 
-
-  .row
-    .col-12
-      .card.card-primary.review-card
-        .card-block
-          a.btn.btn-primary.float-right(href='/location/review/new') Write a Review
-          h2.card-title Customer reviews
-          .row.review
-            .col-12.no-gutters.review-header
-              span.rating
-                i.fas.fa-star
-                i.fas.fa-star
-                i.fas.fa-star
-                i.far.fa-star
-                i.far.fa-star
-              span.reviewAuthor John 
-              small.reviewTimestamp 16 February 2022
-            .col-12
-              p What a great experience.
-          .row.review
-            .col-12.no-gutters.review-header
-              span.rating
-                i.fas.fa-star
-                i.fas.fa-star
-                i.fas.fa-star
-                i.far.fa-star
-                i.far.fa-star
-              span.reviewAuthor Tony 
-              small.reviewTimestamp 28 January 2023
-            .col-12
-              p Amazing adventure.
+      .row
+        .col-12
+          .card.card-primary.review-card
+            .card-block
+              a.btn.btn-primary.float-right(href='/location/review/new') Write a Review
+              h2.card-title Customer reviews
+              .row.review
+                .col-12.no-gutters.review-header
+                  span.rating
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.far.fa-star
+                    i.far.fa-star
+                  span.reviewAuthor John 
+                  small.reviewTimestamp 16 February 2022
+                .col-12
+                  p What a great experience.
+              .row.review
+                .col-12.no-gutters.review-header
+                  span.rating
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.far.fa-star
+                    i.far.fa-star
+                  span.reviewAuthor Tony 
+                  small.reviewTimestamp 28 January 2023
+                .col-12
+                  p Amazing adventure.
 
     .col-12.col-lg-3
       p.lead
